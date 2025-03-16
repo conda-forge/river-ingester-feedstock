@@ -24,6 +24,10 @@ build:
   # much effort was put in to get this working. Redis runs on Linux/Mac
   # only anyways, so you'll need a Linux/Mac machine in the mix regardless.
   skip: true  # [win]
+  {% if libarrow.split(".")[0]|int >= 18 %}
+  # incompatible, due to removal of deprecated APIs: apache/arrow#44079
+  skip: true
+  {% endif %}
 
 requirements:
   build:
