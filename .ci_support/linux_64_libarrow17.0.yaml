@@ -19,6 +19,6 @@ libarrow:
 libboost_devel:
 - '1.86'
 spdlog:
-- '1.13'
+- '1.15'
 target_platform:
 - linux-64
