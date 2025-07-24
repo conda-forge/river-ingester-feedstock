@@ -8,9 +8,6 @@ jobs:
     vmImage: macOS-13
   strategy:
     matrix:
-      osx_64_libarrow16.1:
-        CONFIG: osx_64_libarrow16.1
-        UPLOAD_PACKAGES: 'True'
       osx_64_libarrow17.0:
         CONFIG: osx_64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
